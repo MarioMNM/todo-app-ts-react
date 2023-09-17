@@ -17,10 +17,14 @@ export const Filters: React.FC<Props> = ({
         const className = isSelected ? 'selected' : ''
         return (
           <li key={key}>
-            <a href={href} className={className} onClick={(event) => {
-              event.preventDefault()
-              onFilterChange(key as FilterValue)
-            }}>
+            <a
+              href={href}
+              className={className}
+              onClick={(event) => {
+                event.preventDefault()
+                onFilterChange(key as FilterValue)
+              }}
+            >
               {literal}
             </a>
           </li>

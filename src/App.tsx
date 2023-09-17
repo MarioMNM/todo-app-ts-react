@@ -55,7 +55,7 @@ const App = (): JSX.Element => {
   }
 
   const handleRemoveAllCompleted = (): void => {
-    const newTodos = todos.filter(todo => !todo.completed)
+    const newTodos = todos.filter((todo) => !todo.completed)
     setTodos(newTodos)
   }
 
